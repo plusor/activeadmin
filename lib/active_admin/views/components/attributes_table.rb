@@ -22,7 +22,7 @@ module ActiveAdmin
       def row(*args, &block)
         title = args[0]
         options = args.extract_options!
-        classes = [:row]
+        classes = ['table-row']
         if options[:class]
           classes << options[:class]
         elsif title.present?
